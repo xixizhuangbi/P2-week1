@@ -1,0 +1,348 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+	width: 80%;
+	margin: auto;
+
+}
+
+h3{
+	font-size: 16px;
+}
+
+.header{
+	/*display:flex;*/
+	justify-content:center;
+	padding: 0.8rem 0;
+	width: 100%;
+	
+
+}
+
+/*.header-img{
+	border: 1px red solid;
+	width: 30%;
+	height: 100%;
+	flex-basis: 30%;
+
+}*/
+
+.header-title{
+	
+	font-family: 'Permanent Marker', cursive;
+	font-size: 140%;
+	text-align: center;
+
+}
+
+nav{
+	/*display:flex;*/
+	/*justify-content: center;*/
+	text-align:center;
+	padding: 0.7rem 0;
+}
+
+nav>a{
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin:0 2rem;
+}
+
+nav>a:hover{
+    color: #999;
+	transition: 0.5s;
+}
+
+@media only screen and (max-width:700px) {
+  nav>a{
+  	display:block;
+  	margin:1rem 0;
+  }
+}
+
+section{
+	padding-top: 4rem;
+}
+
+.intro{
+	display:flex;
+	justify-content: center;
+	
+	
+}
+
+.intro h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.intro p{
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+}
+
+.intro>div{
+	flex-basis: 40%;
+	padding:2rem;
+	
+}
+
+.intro-text{
+	/*margin: 8rem 0;*/
+}
+
+.intro img{
+	width:100%;
+}
+
+@media only screen and (max-width:700px) {
+  .intro{
+  	flex-direction: column;
+  }
+ 
+}
+
+
+.product-container{
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 4% 15% 0 15%;
+	flex-wrap: wrap;
+}
+
+.products h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+}
+
+
+.product-item img{
+	width: 100%
+}
+
+.product-item a{
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.product-item a:hover{
+    color: #999;
+	transition: 0.5s;
+}
+
+.product-item{
+	flex-basis:30%;
+	width: 100%;
+	margin: 1% 1.2%;
+	text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+   
+}
+
+@media only screen and (max-width:700px) {
+  .product-container{
+  	flex-direction: column;
+  }
+ 
+}
+
+.fonts{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.font-containers>h3{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+
+}
+
+.font-containers{
+	
+	margin: 1% 1.2%;
+}
+
+.font-containers div{
+	margin: 3rem 1rem;
+
+}
+
+.font-containers h1,h2,h3,h4{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+
+
+}
+
+#font-h1{
+	font-size: 140%;
+}
+
+#font-h3{
+	font-size: 16px;
+}
+
+#p1{
+	font-family: 'Permanent Marker', cursive;
+}
+
+#p2{
+	font-family: 'Lato', sans-serif;
+}
+
+
+.button{
+	width: 100%;
+	justify-content: center;
+	margin: auto;
+	text-align: center;
+
+}
+
+button{
+	
+	
+	
+	font-size: 14px;
+	padding: 0.5em 4.5em;
+	width: 20%;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	background-color:white;
+	color: black;
+	transition: 0.3s;
+	border-width: 1.2px;
+	border-color: black;
+}
+
+button:hover{
+	color: #faf9f8;
+	background: rgba(0,0,0,0.85);
+	transition: 0.3s;
+	border-color: #faf9f8;
+}
+
+hr{
+    border: 1px solid black;
+  }
+
+  .subtotal{
+    text-align: center;
+  }
+  .subtotal p{
+    padding-top: 0.5rem;
+    font-family:'Lato', sans-serif;
+  }
+
+
+
+  .products-checkout{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+
+@media only screen and (max-width:700px) {
+  .products-checkout{
+  	flex-direction: column;
+  }
+ 
+}
+
+
+
+  .product-item{
+    padding: 2rem;
+    text-align: center;
+    font-family:'Lato', sans-serif;
+    font-weight: bold;
+  }
+
+  .product-item a{
+    text-decoration: none;
+    color: black; 
+  }
+
+section>h3{
+	text-align: center;
+}
+
+.Payment-Form{
+text-align: center;
+
+
+}
+
+.Payment-Form>button{
+	margin-top: 1rem;
+}
+
+.PaymentMethod {
+    font-family:'Lato', sans-serif;
+  }
+
+.PaymentMethod label{
+    font-weight: bold;
+  }
+
+ .PaymentMethod>input{
+  	margin: 0.5rem;
+
+ }
+
+
+
+ .info-checkout{
+    width: 100%;
+    display:block;
+  }
+
+ .info-checkout input{
+   font-family:'Lato', sans-serif;
+   margin-bottom: 1em;
+   width: 20%;
+ }
+
+ label{
+  font-family:'Lato', sans-serif;
+  display: block;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+
+input:hover{
+  color: #faf9f8;
+  background: rgba(0,0,0,0.85);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
